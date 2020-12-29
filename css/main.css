@@ -1,0 +1,106 @@
+.footer-grid
+{
+    display: grid;
+
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 30% 30%;
+}
+
+#header
+{
+    width: 100%;
+    height: 250px;
+}
+h1
+{
+    font-size: 42px;
+    font-weight: bold;
+    font-style: normal;
+
+    padding: 10px 0 10px 0;
+
+    text-align: center;
+}
+h3
+{
+    font-family: Times,Georgia,serif;
+    font-size: 2.5375rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+
+    display: block;
+
+    width: 100%;
+    max-width: 550px;
+    margin-top: 0;
+    padding-top: 0;
+
+    letter-spacing: -1.1px;
+
+    color: #3f4d62;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.photo > img
+{
+    width: 100%;
+    max-height: 100%;
+
+    object-fit: cover;
+}
+
+#footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    overflow: hidden;
+
+    width: 100%;
+    width: 100%;
+    height: 15em;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+
+    background-color: orange;
+}
+
+.main-footer
+{
+    font-size: 14px;
+
+    position: relative;
+
+    width: 100%;
+    height: 150px;
+    min-height: 50px;
+    margin-left: 4em;
+    padding: 10px 10px;
+
+    text-align: center;
+
+    color: white;
+    background-color: orange;
+}
+.bottom-footer
+{
+    font-size: 14px;
+
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    padding: 20px;
+
+    text-align: center;
+
+    color: white;
+    background-color: black;
+}
