@@ -1,207 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Affordable Web Design For Small And Medium-sized Companies">
-    <meta name="author" content="Sebastian Eschweiler">
-    <title>1-2-3 Web Design | Welcome</title>
+    <meta charset="UTF-8">
+    <title>CodePen - hamburger slide accordion menu</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dosis'><link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" type="text/javascript"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/58237fbc2d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".button a").click(function () {
-          $(".overlay").fadeToggle(200);
-          $(this).toggleClass('btn-open').toggleClass('btn-close');
+    <script>
+      $(function () {
+        function slideMenu() {
+          var activeState = $("#menu-container .menu-list").hasClass("active");
+          $("#menu-container .menu-list").animate({
+            left: activeState
+              ? "0%"
+              : "-100%"
+          }, 400);
+        }
+        $("#menu-wrapper").click(function (event) {
+          event.stopPropagation();
+          $("#hamburger-menu").toggleClass("open");
+          $("#menu-container .menu-list").toggleClass("active");
+          slideMenu();
+
+          $("body").toggleClass("overflow-hidden");
         });
-      });
-      $('.overlay').on('click', function () {
-        $(".overlay").fadeToggle(200);
-        $(".button a").toggleClass('btn-open').toggleClass('btn-close');
-        open = false;
-      });
+
+        $(".menu-list").find(".accordion-toggle").click(function () {
+          $(this).next().toggleClass("open").slideToggle("fast");
+          $(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
+
+          $(".menu-list .accordion-content").not($(this).next()).slideUp("fast").removeClass("open");
+          $(".menu-list .accordion-toggle").not(jQuery(this)).removeClass("active-tab").find(".menu-link").removeClass("active");
+        });
+      }); // jQuery load
     </script>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <h1>
-            <i class="fa fa-rocket"></i>
-            <span class="highlight">1234</span>
-            Web Design</h1>
-        </div>
+    <!-- partial:index.partial.html -->
 
-        <nav>
-          <ul>
-            <li class="current">
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="services.html">Services</a>
-            </li>
-          </ul>
-          <div class="button">
-            <a class="btn-open" href="#"></a>
-          </div>
-        </nav>
-        <div class="overlay">
-          <div class="wrap">
-            <ul class="wrap-nav">
-              <li>
-                <a href="#">About</a>
-                <ul>
-                  <li>
-                    <a href="#">About Company</a>
-                  </li>
-                  <li>
-                    <a href="#">Designers</a>
-                  </li>
-                  <li>
-                    <a href="#">Developers</a>
-                  </li>
-                  <li>
-                    <a href="#">Pets</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Services</a>
-                <ul>
-                  <li>
-                    <a href="https://www.google.hr/">Web Design</a>
-                  </li>
-                  <li>
-                    <a href="#">Development</a>
-                  </li>
-                  <li>
-                    <a href="#">Apps</a>
-                  </li>
-                  <li>
-                    <a href="#">Graphic design</a>
-                  </li>
-                  <li>
-                    <a href="#">Branding</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Work</a>
-                <ul>
-                  <li>
-                    <a href="#">Web</a>
-                  </li>
-                  <li>
-                    <a href="#">Graphic</a>
-                  </li>
-                  <li>
-                    <a href="#">Apps</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <div class="social">
-              <a href="http://mario-loncarek.from.hr/">
-                <div class="social-icon">
-                  <i class="fa fa-facebook"></i>
-                </div>
-              </a>
-              <a href="#">
-                <div class="social-icon">
-                  <i class="fa fa-twitter"></i>
-                </div>
-              </a>
-              <a href="#">
-                <div class="social-icon">
-                  <i class="fa fa-codepen"></i>
-                </div>
-              </a>
-              <a href="#">
-                <div class="social-icon">
-                  <i class="fa fa-behance"></i>
-                </div>
-              </a>
-              <a href="#">
-                <div class="social-icon">
-                  <i class="fa fa-dribbble"></i>
-                </div>
-              </a>
-              <p>
-                From: Zagreb, Croatia<br>
-                Site:
-                <a href="http://mario-loncarek.from.hr/">mario-loncarek.from.hr</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- menu-container -->
+    <!-- partial -->
 
-    </header>
-    <section id="showcase">
-      <div class="container">
-        <h1>Affordable Web Design For Small And Medium-sized Companies</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo repellat incidunt quasi quibusdam non nostrum, dolorem molestiae enim, excepturi soluta libero voluptatem provident consectetur accusamus nulla repudiandae nobis. Excepturi, assumenda.</p>
-      </div>
-    </section>
-    <section id="newsletter">
-      <div class="container">
-        <h1>Get Our Newsletter</h1>
-        <form action="">
-          <input type="email" placeholder="Enter your email address ... ">
-          <button type="submit" class="button_1">Subscribe</button>
-        </form>
-      </div>
-    </section>
-    <section id="boxes">
-      <div class="container">
-        <div class="box">
-          <i class="fa fa-signal fa-5x"></i>
-          <h3>Grow Your Audience</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nulla id quisquam veritatis eius perspiciatis velit eum unde soluta, veniam aliquid deleniti ex similique. Aperiam molestiae natus nulla sit, quis.</p>
-        </div>
-        <div class="box">
-          <i class="fa fa-photo fa-5x"></i>
-          <h3>Modern Web Design</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quia magnam, voluptates, impedit eum laboriosam assumenda eos sit at nihil, dolore! Aliquam, laborum neque corporis molestiae eius ea laudantium porro.</p>
-        </div>
-        <div class="box">
-          <i class="fa fa-cube fa-5x"></i>
-          <h3>Ultra-Fast Hosting</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quia magnam, voluptates, impedit eum laboriosam assumenda eos sit at nihil, dolore! Aliquam, laborum neque corporis molestiae eius ea laudantium porro.</p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <section id="top-footer" style="height:50px;" class="footer-container">
-        <div class="footer-item">
-          <h2>With the precious<br>Support of our partners</h2>
-        </div>
-        <div class="footer-item"><img style="height:80px; width:90px;" src="img/Sponsor1.png" alt="Italian Trulli"><img style="height:80px; width:90px;" src="img/Sponsor2.png" alt="Italian Trulli"></div>
-        <div>
-          <span style="color: Mediumslateblue;">
-            <i class="fab fa-facebook fa-4x"></i>
-            <i class="fab fa-youtube-square fa-4x"></i>
-            <i class="fab fa-instagram-square fa-4x"></i>
-            <i class="fab fa-twitter-square fa-4x"></i>
-          </span>
-        </div>
-        <div class="footer-container-vertical">
-          <i>About Us</i>
-          <i>Contact Us</i>
-          <i>Join Us</i>
-          <i>Terms & Conditions</i>
-          <i>Privacy Policy</i>
-        </div>
-      </section>
-      <section id="bottom-footer">
-        <p>&copy; Galway International Arts Festival 2020. All rights reserved. This website is developed for educational purposes only.</p>
-      </section>
-
-    </footer>
   </body>
 </html>
