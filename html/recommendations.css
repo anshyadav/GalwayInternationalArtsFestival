@@ -1,0 +1,79 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: #44318D;
+  color: #FFFFFF;
+
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #2A1B3D;
+  font-family: "Bebas Neue", cursive;
+}
+.branding{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 22px;
+
+}
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+}
+ul li{
+
+  list-style: none;
+  display: inline-block;
+  float: left;
+  line-height: 100px;
+}
+ul li a{
+
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Bebas Neue', cursive;
+  color: #D83F87;
+  padding: 0 20px;
+}
+ul li a:hover{
+  color: #80F7FF;
+}
+
+#main {
+  float: left;
+  text-align: center;
+}
+#recommendations{
+  margin-top: 20px;
+
+}
+
+#recommendations .recommendation{
+  float: left;
+  width: 50%;
+  padding: 10px;
+  text-align: left;
+}
+footer{
+  padding:5px;
+  margin-top: 5px;
+  color: #ffffff;
+  background-color: #D83F87;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+}
+
+footer.
