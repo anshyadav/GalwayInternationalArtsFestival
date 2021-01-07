@@ -1,3 +1,6 @@
+/*
+
+
 *{
   margin:0;
   padding:0;
@@ -51,4 +54,39 @@ ul li a:hover{
   font-family: 'Bebas Neue', cursive;
   color: #fff;
   padding: 0 20px;
+}
+*/
+
+#aboutContent {
+font-size: 20px;
+margin-top: 100px;
+padding-left:15px;
+min-height: 400px;
+}
+
+/*header input[type='search'] {
+  width: 50% !important;
+}*/
+
+header ul li a:hover{
+  
+}
+
+header nav a {  
+  color: #D83F87 !important;
+  font-family: 'Bebas Neue', cursive;
+  font-size:25px !important;
+}
+
+
+header nav a:hover {  
+  color: #80F7FF !important;
+}
+
+.fa-3x {
+font-size: 30px !important;
+}
+
+header {
+    background-color: #2A1B3D !important;
 }
