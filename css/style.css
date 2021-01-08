@@ -1,6 +1,6 @@
 body
 {
-    font: 15px Arial, Helvetica, sans-serif;   line-height: 1.5; margin: 0;  padding: 0;  background-color: #f4f4f4;  -webkit-font-smoothing: antialiased;
+    line-height: 1.5; margin: 0;  padding: 0;  background-color: #f4f4f4;  -webkit-font-smoothing: antialiased;
 }
 .container
 {
@@ -14,13 +14,15 @@ ul
 /* Main Page: Headings*/
 .main-heading
 {
-    font-family: 'Myriad Pro';
-    font-size: 16px;  font-weight: bold;  line-height: 1.5; text-align: left; color: rgb(50, 50, 50);margin-top: 15%; margin-left: 2%;
+
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 16px;  font-weight: bold;  line-height: 1.5; text-align: left; margin-top: 15%; margin-left: 2%;
 }
 
 .h1-heading{
-  font-family: 'Myriad Pro';
-  font-size: 28px;  font-weight: bold;  line-height: 1.5; text-align: left; color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;  font-weight: bold;  line-height: 1.5; text-align: left; color: #fff;
 
 }
 
@@ -32,7 +34,7 @@ hr
 /* Header */
 header
 {
-    font-family: 'Nunito', sans-serif;  font-weight: bold;  position: fixed;
+    font-family: 'Nunito', sans-serif;  font-weight: bold;
     z-index: 99999999;top: 0;  width: 100%;  height: 80px;
     margin: 0;background-color: #000;
 }
@@ -51,7 +53,7 @@ header .logo
 
 header .logo img
 {
-    width: 8%;
+    width: 60px;
 }
 header .logo span
 {
@@ -111,6 +113,39 @@ header nav a:hover,
 {
     display: none;
 }
+
+/*
+Recommendations Content
+*/
+
+#recommendations-main h1{
+  font-size: 40px;
+  text-align: center;
+}
+.recommendation{
+  float: left;
+  width: 25%;
+  margin: 20px;
+
+
+
+}
+
+.recommendation img{
+
+  height: 175px;
+  width: 200px;
+  float: center;
+}
+
+.recommendation h3{
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+
 
 /* RESPONSIVE */
 /* Yep, it's glitchy */
@@ -193,7 +228,7 @@ header nav a:hover,
 }
 #top-footer
 {
-    margin-top: 2%;  padding: 2% 2% 2% 2%;  text-align: center;  color: #fff;  background-color: grey;
+    margin-top: 2%;  padding: 2% 2% 2% 2%;  text-align: center;  color: #fff;  background-color: #A4B3B6;
 }
 .footer-container
 {
@@ -616,8 +651,9 @@ input[type=text]
 }
 p.info
 {
-    font-family: 'Myriad Pro';
-    font-size: 16px;  line-height: 1;  text-align: left;     color: rgb(50, 50, 50);
+  font-family: 'Roboto Slab', serif ;
+  color: white;
+  font-size: 16px;  line-height: 1;  text-align: left;
 }
 .giftwrap
 {
@@ -984,5 +1020,68 @@ p.info
 
 @media(max-width: 768px)
 {
-    /* insert CSS code for small screen sizes here */
+    #navlinks {
+      display: none;
+    }
+
+    body > header > div > div.menu > i {
+      display: none;
+    }
 }
+
+
+
+
+
+
+
+
+<!-- Myah CSS Changes -->
+#aboutContent {
+font-size: 20px;
+margin-top: 100px;
+padding-left:15px;
+min-height: 400px;
+}
+
+/*header input[type='search'] {
+  width: 50% !important;
+}*/
+
+header ul li a:hover{
+text-decoration: underline;
+}
+
+header nav a {
+  color: #D83F87 !important;
+  font-family: 'Bebas Neue', cursive;
+  font-size:25px !important;
+}
+
+
+header nav a:hover {
+  color: #80F7FF !important;
+}
+
+.fa-3x {
+font-size: 30px !important;
+}
+
+header {
+    background-color: #2A1B3D !important;
+}
+
+body {
+  background-color: #44318D !important;
+  font-family: 'Roboto Slab', serif !important;
+  color: white !important;
+}
+
+#top-footer > div.footer-container-vertical a {
+  color: white;
+}
+#top-footer > div.footer-container-vertical a:hover {
+  text-decoration: underline;
+}
+
+<!-- Myah CSS Changes -->
