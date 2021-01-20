@@ -1156,7 +1156,7 @@ body {
 			position: relative;
 			width: 100%;
 			top: 40%;
-			/*transform: translate(-50%);*/
+
 			text-align: center;
 		}
 
@@ -1200,3 +1200,19 @@ body {
 			transform: translateY(-40px);
 		}
 /* Contact Us Page Changes ends here ************************************************  */
+/* Terms and conditions page chages ------------------------------------------------- */
+
+.terms{
+  padding:10px 0;
+  text-align: center;
+
+
+}
+.terms p{
+  display: block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.terms h1,h3{
+  text-align:center;
+}
