@@ -1,6 +1,6 @@
 body
 {
-    line-height: 1.5; margin: 0;  padding: 0;  background-color: #eae7dc !important; -webkit-font-smoothing: antialiased;
+    line-height: 1.5; margin: 0;  padding: 0;  background-color: #d1e8e2 !important; -webkit-font-smoothing: antialiased;
 }
 .container
 {
@@ -14,10 +14,8 @@ ul
 /* Main Page: Headings*/
 .main-heading
 {
-
-    font-family: 'Roboto Slab', serif;
-    color: white;
-    font-size: 16px;  font-weight: bold;  line-height: 1.5; text-align: left; margin-top: 15%; margin-left: 2%;
+    color: #2c3531;
+    font-size: 16px;  font-weight: bold;  line-height: 1.5; text-align: left; margin-top: 23%; margin-left: 2%;
 }
 
 .h1-heading{
@@ -28,7 +26,7 @@ ul
 
 hr
 {
-    width: 96%;  margin-top: -15px;     margin-left: 2%;  text-align: left;
+    width: 96%;  margin-top: -15px;     margin-left: 2%;  text-align: left; background-color: #116466;
 }
 
 /* Header */
@@ -186,7 +184,7 @@ Recommendations Content
 #showcase
 {
     min-height: 400px;
-    margin-top: 5%; text-align: center;  color: #fff;     background: url('../img/headerbg.jpg') no-repeat center;  background-size: cover;
+    margin-top: 2.2%; text-align: center;  color: #fff;
 }
 #showcase h1
 {
@@ -201,11 +199,14 @@ Recommendations Content
 /* Newsletter */
 #newsletter
 {
-    margin-top: 2%;  padding: 15px;  color: #fff;  background: #353637;
+    margin-top: 6%;     padding-top: 20px;
+    padding-bottom: 35px;  color: #fff;  background: #2c3531;
+
 }
 #newsletter h1
 {
     float: left;
+        margin-top: 4%;
 }
 #newsletter form
 {
@@ -221,6 +222,34 @@ Recommendations Content
 {
     height: 38px;  padding-right: 20px;  padding-left: 20px;  color: #353637;     border: 0;  background: #ccc;
 }
+.fab{
+  font-size: 3em;
+  font-weight: 800;
+}
+.fab:hover {
+
+  transform: rotateY(360deg);
+}
+.fa-facebook:hover{
+color:#4267B2;
+transition: .6s;
+transform: rotate(360deg);
+}
+.fa-youtube:hover{
+color: #c4302b;
+transition: .6s;
+transform: rotate(360deg);
+}
+.fa-instagram:hover{
+color:#8a3ab9;
+transition: .6s;
+transform: rotate(360deg);
+}
+.fa-twitter:hover{
+color: #1DA1F2;
+transition: .6s;
+transform: rotate(360deg);
+}
 #bottom-footer
 {
     margin-top: .14px;  padding: 16px;  text-align: center;  vertical-align: middle; color: #fff;  background-color: #000;
@@ -232,7 +261,7 @@ Recommendations Content
 .footer-container
 {
     display: flex;  flex-flow: row wrap; justify-content: space-around; height: 100%;
-    margin: 2% 0 0 -1%;vertical-align: middle;
+    margin: 4% 0 0 -1%;vertical-align: middle;
 }
 .footer-container-vertical
 {
@@ -280,7 +309,7 @@ ul#services h3
 {
     position: relative;
 
-    margin: 50px auto;  padding: 10px;  box-shadow: 0 0 20px rgba(0,0,0,.4);
+    margin: 0px auto;  padding: 10px;  box-shadow: 0 0 20px rgba(0,0,0,.4);
 }
 
 #slideshow > div
@@ -291,7 +320,7 @@ ul#services h3
 #slideshow > div > img
 {
     width: 100%;
-    max-height: 550px;
+    max-height: 660px;
 }
 
 
@@ -373,9 +402,9 @@ ul.producers
 }
 ul.producers li
 {
-    display: inline-block;  width: 250px;  min-height: 300px;  max-height: 300px;  margin: 10px 0 0 10px;  padding: 0 30px;
+    display: inline-block;  width: 250px;  min-height: 300px;  max-height: 300px;  margin: 10px 30px 0 14px;  padding: 0 30px;
 
-    list-style: none;  transition: background-color .2s;     text-align: center;  vertical-align: top;  background-color: rgba(255, 255, 255, .2);  box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+    list-style: none;  transition: background-color .2s;     text-align: center;  vertical-align: top;  background-color: rgba(255, 255, 255, 1);  box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
 }
 ul.producers li p
 {
@@ -409,7 +438,7 @@ ul.producers li:hover
 }
 .producers .logo::after
 {
-    opacity: 1;  filter: url(#desaturate);
+    opacity: 1;  filter: url(#saturate);
 }
 .producers .logo:hover::before
 {
@@ -544,7 +573,7 @@ ul.producers li:hover
 {
     z-index: 1;
 
-    padding: 1rem 2rem;  color: #939393;  background: white;
+    padding: 2rem 2rem;  color: #d1e8e2;  background: #116466;
 }
 .giftcard-content > *
 {
@@ -583,7 +612,7 @@ ul.producers li:hover
 
 .giftcard-footer
 {
-    position: absolute;  z-index: 3;  bottom: 0;  left: 0;  width: 100%;  height: 4rem;  transform: translateZ(0);     background: white;
+    position: absolute;  z-index: 3;  bottom: 0;  left: 0;  width: 100%;  height: 4rem;  transform: translateZ(0);     background: #fff;
 }
 .giftcard-footer > *
 {
@@ -642,7 +671,7 @@ input[type=text]
 {
     font-size: 1.3rem;  line-height: 50px;
 
-    display: inline-block;  width: auto;  height: 50px;  padding-right: 1rem;  padding-left: 1rem;  text-align: center;  text-decoration: none;     color: white;  background: orange;
+    display: inline-block;  width: auto;  height: 50px;  padding-right: 1rem;  padding-left: 1rem;  text-align: center;  text-decoration: none;     color: white;  background-color: #116466;
 }
 .button.secondary
 {
@@ -650,8 +679,7 @@ input[type=text]
 }
 p.info
 {
-  font-family: 'Roboto Slab', serif ;
-  color: white;
+  color: #116466;
   font-size: 16px;  line-height: 1;  text-align: left;
 }
 .giftwrap
@@ -660,7 +688,7 @@ p.info
 }
 .giftwrap .button
 {
-    top: calc(50% - 25px);  left: calc(50% - 50px);  width: 125px; height: 46px;
+    top: calc(50% - 25px);  left: calc(50% - 50px);  width: 140px; height: 46px;
 }
 .giftwrap:before,
 .giftwrap:after
