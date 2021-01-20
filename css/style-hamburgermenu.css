@@ -7,46 +7,25 @@ a
     text-decoration: none; color: white;
 }
 
-.head {
-  padding-left:15px;
+.head
+{
+    padding-left: 15px;
 }
 
 #menu-wrapper
 {
-    overflow: hidden;
-
-    max-width: 100%;
-
-    cursor: pointer;
+    overflow: hidden;  max-width: 100%;  cursor: pointer;
 }
 
 
 #menu-wrapper #hamburger-menu
 {
-    position: relative;
-
-    width: 25px;
-    height: 20px;
-    margin: 15px;
+    position: relative;  width: 25px;  height: 20px;  margin: 15px;
 }
 
 #menu-wrapper #hamburger-menu span
 {
-    position: absolute;
-    left: 0;
-
-    display: block;
-
-    width: 100%;
-    height: 2px;
-
-    transition: .4s ease-in-out;
-    transform: rotate(0deg);
-
-    opacity: 1;
-    color: black;
-    border-radius: 10px;
-    background-color: #D83F87;
+    position: absolute;  left: 0;  display: block;  width: 100%;  height: 2px;  transition: .4s ease-in-out;  transform: rotate(0deg);  opacity: 1;  color: black;  border-radius: 10px;  background-color: #dae8e2;
 }
 
 #menu-wrapper #hamburger-menu span:nth-child(1)
@@ -67,9 +46,7 @@ a
 }
 #menu-wrapper #hamburger-menu.open span:nth-child(2)
 {
-    transform: translateX(-60px);
-
-    opacity: 0;
+    transform: translateX(-60px);  opacity: 0;
 }
 #menu-wrapper #hamburger-menu.open span:nth-child(3)
 {
@@ -78,36 +55,17 @@ a
 
 #menu-container .menu-list .menu-submenu
 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 20px;  padding-bottom: 20px;
 }
 #menu-container .menu-list
 {
-    position: absolute;
-    z-index: 999;
-    left: -100%;
-
-    display: block;
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    width: 100%;
-    max-width: 450px;
-    padding-left: 0;
-    background:#2A1B3D;
-    box-shadow: rgba(100,100,100,.2) 6px 2px 10px;
+    position: absolute;  z-index: 999;  left: -100%;  display: block;  overflow-x: hidden;  overflow-y: auto;  width: 100%;  max-width: 450px;  padding-left: 0;  background: #2a1b3d;  box-shadow: rgba(100,100,100,.2) 6px 2px 10px;
 }
 
 #menu-container .menu-list li.accordion-toggle,
 #menu-container .menu-list .menu-login
 {
-    font-size: 16px;
-
-    padding: 20px;
-
-    text-transform: uppercase;
-
-    border-top: 1px solid #dbdcd2;
+    font-size: 16px;  padding: 20px;  text-transform: uppercase;  border-top: 1px solid #dbdcd2;
 }
 #menu-container .menu-list li:first-of-type
 {
@@ -117,12 +75,7 @@ a
 .accordion-toggle,
 .accordion-content
 {
-    font-size: 16px;
-
-    position: relative;
-
-    cursor: pointer;
-    letter-spacing: 1px;
+    font-size: 16px;  position: relative;  cursor: pointer;  letter-spacing: 1px;
 }
 
 .accordion-content
@@ -133,48 +86,24 @@ a
 .accordion-toggle a:before,
 .accordion-toggle a:after
 {
-    position: absolute;
-    top: 50%;
-    right: 30px;
-
-    display: block;
-
-    width: 15px;
-    height: 2px;
-    margin-top: -1px;
-
-    content: '';
-    transition: all .3s ease-out;
-    transform-origin: 50% 50%;
-
-    background-color: #5a5858;
+    position: absolute;  top: 50%;  right: 30px;  display: block;  width: 15px;  height: 2px;  margin-top: -1px;  content: '';  transition: all .3s ease-out;  transform-origin: 50% 50%;  background-color: #5a5858;
 }
 
 .accordion-toggle a:before
 {
-    z-index: 2;
-
-    transform: rotate(-90deg);
-
-    opacity: 1;
+    z-index: 2;  transform: rotate(-90deg);  opacity: 1;
 }
 
 .accordion-toggle.active-tab
 {
-    transition: all .3s ease;
-     background: #D83F87;
+    transition: all .3s ease;  background: #d83f87;
 }
 .accordion-toggle a.active:before
 {
-    transform: rotate(0deg);
-
-    background: #fff !important;
+    transform: rotate(0deg);  background: #fff !important;
 }
 
 .accordion-toggle a.active:after
 {
-    transform: rotate(180deg);
-
-    opacity: 0;
-    background: #fff !important;
+    transform: rotate(180deg);  opacity: 0;  background: #fff !important;
 }
