@@ -71,7 +71,7 @@
     </div>
 
     <div class="logo">
-      <a href="index.html">
+      <a href="..\index.html">
       <img src="..\img\logo\logo.svg">
       </a>
 
@@ -97,18 +97,35 @@
 
 
 
-      <div class="wrapper">
-        <section>
+      <section class="formsection">
         <div class="title">
           <h2><br>My Galway Arts Festival Account</h2>
         </div>
-        <div class="form">With your Galway Arts Festival Account you can pre-register for
+        <div class="topform">With your Galway Arts Festival Account you can pre-register for
           tickets before they go on sale and stay up-to-date on all Galway
           Arts Festival related news. You can check your personal information any time.
         </div>
-        <p> Sign in to your Galway Arts festival Account</p>
-        <div class="left column">04</div>
-        <div class="right column">05</div>
+        <p><strong>Login to your Galway Arts festival Account</strong></p>
+        <div class="loginform">
+        <form action="index.html" method="post">
+          <input class ="formblock" type="text" name="email" placeholder="Enter your e-mail...">
+          <input class ="formblock" type="password" name="password" placeholder="Enter your password...">
+          <input class ="formblock" type="submit" name="submit">
+        </div>
+
+        <div class="registerform">
+          <p><strong>Sign up:</strong></p>
+		  
+		  
+		  <input class ="formblock" type="text" name="email" placeholder="Enter your e-mail...">
+          <input class ="formblock" type="password" name="password" placeholder="Enter your password...">
+          <input class ="formblock" type="password" name="password" placeholder="Re-enter your password...">
+          Female<input type="radio" name="gender" value="Female">
+          Male<input type="radio" name="gender" value="Male">
+          Other<input type="radio" name="gender" value="Other" checked>
+          <input class ="formblock" type="submit" name="submit">
+          </div>
+        </form>
       </section>
 
 
