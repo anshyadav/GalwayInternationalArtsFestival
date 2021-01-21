@@ -1128,6 +1128,9 @@ font-size: 30px !important;
 .contact-form form{
     padding: 14%;
 }
+
+
+
 .contact-form form .row{
     margin-bottom: -7%;
 }
@@ -1291,7 +1294,9 @@ padding-top:20px !important;
 }
 
 
-
+body > section > div.loginform > form, body > section > div.registerform > form {
+	padding:0px;
+}
 
 
 
