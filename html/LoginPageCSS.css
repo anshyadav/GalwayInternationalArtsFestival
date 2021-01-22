@@ -69,17 +69,17 @@ min-height: 400px;
 }*/
 
 header ul li a:hover{
-  
+
 }
 
-header nav a {  
+header nav a {
   color: #D83F87 !important;
   font-family: 'Bebas Neue', cursive;
   font-size:25px !important;
 }
 
 
-header nav a:hover {  
+header nav a:hover {
   color: #80F7FF !important;
 }
 
