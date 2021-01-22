@@ -746,6 +746,7 @@ p.info
 .giftwrap
 {
     width: 150px;  height: 150px;
+    padding-top: 10px;
 }
 .giftwrap .button
 {
